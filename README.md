@@ -1,6 +1,6 @@
 Kiran's Next.js AI Chatbot
 
-🚀 Live Demo: kiran-nextjs-ai-chatbot.vercel.app
+🚀 Live Demo: https://kiran-nextjs-ai-chatbot.vercel.app
 
 📌 Overview
 
