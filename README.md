@@ -1,61 +1,105 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+Kiran's Next.js AI Chatbot
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+🚀 Live Demo: kiran-nextjs-ai-chatbot.vercel.app
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+📌 Overview
 
-## Features
+Kiran's Next.js AI Chatbot is an open-source AI chatbot template built with Next.js 14, Vercel’s AI SDK, and OpenAI's GPT-4o. It supports multiple AI models, user authentication, and chat history storage. This project is fully customizable and scalable, making it a great starting point for AI-powered applications.
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports OpenAI (default), Anthropic, Cohere, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+🎯 Features
 
-## Model Providers
+Next.js 14 & App Router 🚀
 
-This template ships with OpenAI `gpt-4o` as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+Fast, optimized routing
 
-## Deploy Your Own
+React Server Components (RSCs) and Server Actions
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+AI SDK by Vercel 🧠
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET,OPENAI_API_KEY&envDescription=Learn%20more%20about%20how%20to%20get%20the%20API%20Keys%20for%20the%20application&envLink=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel.&demo-url=https%3A%2F%2Fchat.vercel.ai&stores=[{%22type%22:%22postgres%22},{%22type%22:%22blob%22}])
+Supports OpenAI (GPT-4o), Anthropic, Cohere, and more
 
-## Running locally
+Hooks for building chat and generative UI
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+Modern UI with Tailwind CSS & ShadCN 🎨
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
+Styled with Tailwind CSS
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+Uses ShadCN & Radix UI for components
 
-```bash
+Persistent Chat History & File Storage 📂
+
+Vercel Postgres for saving chat history
+
+Vercel Blob Storage for managing uploads
+
+Secure Authentication with NextAuth.js 🔐
+
+OAuth support (Google, GitHub, etc.)
+
+Session management for users
+
+🚀 Deployment
+
+1-Click Deploy on Vercel
+
+Deploy your own version instantly:
+
+
+
+🛠️ Installation & Local Development
+
+1️⃣ Clone the repository
+
+git clone https://github.com/yourusername/kiran-nextjs-ai-chatbot.git
+cd kiran-nextjs-ai-chatbot
+
+2️⃣ Install dependencies
+
 pnpm install
-pnpm dev
-```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+3️⃣ Set up environment variables
+
+cp .env.example .env
+
+Edit the .env file and add your OpenAI API Key and Auth Secret.
+
+4️⃣ Run the development server
+
+pnpm dev
+
+Your chatbot will now be live at localhost:3000 🚀
+
+📡 Backend API Configuration
+
+Ensure your backend API URL is correct in your .env:
+
+VITE_BACKEND_URL=http://localhost:5003
+
+For production:
+
+VITE_BACKEND_URL=https://your-backend-api.vercel.app
+
+🏗️ Technologies Used
+
+Next.js 14 (App Router, RSCs, Server Actions)
+
+Vercel AI SDK (Supports multiple AI models)
+
+OpenAI GPT-4o (Default AI model)
+
+NextAuth.js (Secure authentication)
+
+Vercel Postgres & Blob Storage (Persistent data storage)
+
+Tailwind CSS & ShadCN (Modern UI styling)
+
+TypeScript & pnpm (For better scalability)
+
+🎉 Try it Live!
+
+kiran-nextjs-ai-chatbot.vercel.app
+
+This AI chatbot is ready for production and fully customizable! 🚀🔥
+
+💡 Contributions & Feedback Welcome! If you have ideas or improvements, feel free to open an issue or contribute. 😊
+
